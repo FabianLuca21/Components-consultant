@@ -20,7 +20,11 @@
 - **[Netlify](https://www.netlify.com/)** for deployment
 
 
-## 🚀 Getting Started
+🚀 Getting Started
+👨‍💻 Created by Fabian
+📍 Based in Germany
+📬 For questions or feedback, open an issue.
+
 
 To run this project locally, clone the repository:
 
