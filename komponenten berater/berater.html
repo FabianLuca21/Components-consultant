@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Hardware-Berater</title>
+    <link rel="stylesheet" href="berater.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PC Hardware-Berater</h1>
+
+        <label for="componentType">Wähle die Kategorie:</label>
+        <select id="componentType" onchange="updateDropdown()">
+            <option value="cpu">Ich habe eine CPU</option>
+            <option value="gpu">Ich habe eine GPU</option>
+        </select>
+
+        <label for="componentSelect">Wähle dein Modell:</label>
+        <select id="componentSelect"></select>
+
+        <button onclick="getRecommendation()">Empfohlene Hardware anzeigen</button>
+        <button class="zurück" onclick="window.location.href='index.html'">Zurück</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="berater.js"></script>
+</body>
+</html>

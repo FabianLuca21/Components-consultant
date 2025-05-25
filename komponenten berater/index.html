@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC-Komponenten Berater</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="pc-builder"> 
+    <h1>Bottleneck rechner</h1>
+
+    <form onsubmit="return false;">
+      <label for="cpu-search">CPU suchen:</label>
+      <input type="text" id="cpu-search" onkeyup="filterOptions('cpu-search', 'cpu')" placeholder="CPU suchen..." data-tooltip="Geben Sie den Namen oder Teile des Namens einer CPU ein">
+      <select id="cpu"></select>
+
+      <label for="gpu-search">GPU suchen:</label>
+      <input type="text" id="gpu-search" onkeyup="filterOptions('gpu-search', 'gpu')" placeholder="GPU suchen..." data-tooltip="Geben Sie den Namen oder Teile des Namens einer GPU ein">
+      <select id="gpu"></select>
+
+      
+      <div class="progress-container">
+        <div class="progress-bar" id="calculation-progress"></div>
+      </div>
+
+      <button onclick="evaluateBottleneck()" data-tooltip="Überprüft das Verhältnis zwischen CPU und GPU">Bottleneck prüfen</button>
+      <div class="button-container">
+        <button class="fps" onclick="window.location.href='fps.html'" data-tooltip="Berechnet die erwarteten FPS für verschiedene Spiele">Zur FPS-Berechnung</button>
+        <button class="berater" onclick="window.location.href='berater.html'" data-tooltip="Erhält personalisierte Komponenten-Empfehlungen">Zum Berater</button>
+      </div>
+    </form>
+
+    <div id="bottleneck-result" style="display: none;">
+      <p id="bottleneck-text"></p>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

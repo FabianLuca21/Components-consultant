@@ -1,0 +1,47 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPS Rechner</title>
+    <link rel="stylesheet" href="fps.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FPS Rechner</h1>
+        <form id="fpsForm">
+            <label for="gpu">Grafikkarte:</label>
+            <select id="gpu"></select>
+
+            <label for="cpu">Prozessor:</label>
+            <select id="cpu"></select>
+
+            <label for="ram">Arbeitsspeicher (GB):</label>
+            <select id="ram">
+                <option value="8">8 GB</option>
+                <option value="16">16 GB</option>
+                <option value="32">32 GB</option>
+                <option value="64">64 GB</option>
+            </select>
+
+            <label for="resolution">Auflösung:</label>
+            <select id="resolution">
+                <option value="1080p">1920x1080 (Full HD)</option>
+                <option value="1440p">2560x1440 (WQHD)</option>
+                <option value="4k">3840x2160 (4K)</option>
+            </select>
+
+            <label for="game">Spiel:</label>
+            <select id="game"></select>
+
+            <button type="submit">FPS berechnen</button>
+            <button onclick="window.location.href='index.html'">Zurück</button>
+            
+
+        </form>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="fps.js"></script>
+</body>
+</html>
