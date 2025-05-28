@@ -29,4 +29,4 @@
 To run this project locally, clone the repository:
 
 ```bash
-git clone https://github.com/your-username/komponentenberater.git
+git clone https://github.com/FabianLuca21/Components-consultant.git
