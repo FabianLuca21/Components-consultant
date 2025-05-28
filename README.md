@@ -23,7 +23,7 @@
 🚀 Getting Started
 👨‍💻 Created by Fabian
 📍 Based in Germany
-📬 For questions or feedback, open an issue.
+📬 For questions or feedback, open an issue or send a Email.
 
 
 To run this project locally, clone the repository:
